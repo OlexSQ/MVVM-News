@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gwY-dw-g3u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detaile View Controller-->
+        <scene sceneID="KAD-6D-K8g">
+            <objects>
+                <viewController id="gwY-dw-g3u" customClass="DetaileViewController" customModule="NewsMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLB-Hv-J1W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-i7-ctc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="erk-2a-Btj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VdF-5J-iYk">
+                                <rect key="frame" x="0.0" y="132" width="414" height="200"/>
+                                <color key="backgroundColor" red="0.072620339689999994" green="0.1020455435" blue="0.2391380072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="s1l-TY-1AZ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q0X-bt-wPD">
+                                <rect key="frame" x="0.0" y="340" width="414" height="492"/>
+                                <color key="backgroundColor" red="0.072620339689999994" green="0.1020455435" blue="0.2391380072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="43X-DO-Bmh"/>
+                        <color key="backgroundColor" red="0.072620339689999994" green="0.1020455435" blue="0.2391380072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="43X-DO-Bmh" firstAttribute="bottom" secondItem="q0X-bt-wPD" secondAttribute="bottom" constant="30" id="FIq-eI-vSb"/>
+                            <constraint firstItem="q0X-bt-wPD" firstAttribute="top" secondItem="VdF-5J-iYk" secondAttribute="bottom" constant="8" id="G3y-hw-LtW"/>
+                            <constraint firstItem="AlG-i7-ctc" firstAttribute="top" secondItem="43X-DO-Bmh" secondAttribute="top" id="MPM-6r-rQ3"/>
+                            <constraint firstItem="AlG-i7-ctc" firstAttribute="trailing" secondItem="43X-DO-Bmh" secondAttribute="trailing" id="VwB-Zq-Y9r"/>
+                            <constraint firstItem="q0X-bt-wPD" firstAttribute="trailing" secondItem="43X-DO-Bmh" secondAttribute="trailing" id="gSt-yc-xHv"/>
+                            <constraint firstItem="q0X-bt-wPD" firstAttribute="leading" secondItem="43X-DO-Bmh" secondAttribute="leading" id="h8v-Rr-i37"/>
+                            <constraint firstItem="VdF-5J-iYk" firstAttribute="top" secondItem="AlG-i7-ctc" secondAttribute="bottom" constant="8" id="hBg-XH-8ca"/>
+                            <constraint firstItem="VdF-5J-iYk" firstAttribute="leading" secondItem="43X-DO-Bmh" secondAttribute="leading" id="m4y-ps-Ygj"/>
+                            <constraint firstItem="AlG-i7-ctc" firstAttribute="leading" secondItem="43X-DO-Bmh" secondAttribute="leading" id="mvz-GM-CEQ"/>
+                            <constraint firstItem="VdF-5J-iYk" firstAttribute="trailing" secondItem="43X-DO-Bmh" secondAttribute="trailing" id="sjG-dg-tcS"/>
+                            <constraint firstItem="VdF-5J-iYk" firstAttribute="centerX" secondItem="43X-DO-Bmh" secondAttribute="centerX" id="zXi-YX-s0b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lJB-5T-OWS"/>
+                    <connections>
+                        <outlet property="describeTextView" destination="q0X-bt-wPD" id="1cU-A1-X8k"/>
+                        <outlet property="newsImageView" destination="VdF-5J-iYk" id="l8m-cZ-f8D"/>
+                        <outlet property="titleLable" destination="AlG-i7-ctc" id="NcW-27-0zR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvN-sF-bq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.00000000000011" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+</document>
